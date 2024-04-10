@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: black;
+    --bg-color: #eef0f2;
+    --box-shadow-color: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(93, 104, 121, .888);
+    --bt-color: #e7e8ec;
+    --stroke-color: rgba(102, 100, 100, 0.2);
+    --switch-bg-url: url(./assets/sun.svg);
+}
+
+
+/*body{
+    /*background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;*/
+    /*background: var(--bg-color);
+}*/
+
+body *{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+/*display, justify e alingn: centralizar todo o conteúdo*/
+#container{
+    width: 100%;
+    max-width: 700px;
+    margin: 22px 0  0   0;
+    padding: 2px 24px;
+}
+
+
+.neumorphism{
+    height: 200px;
+    max-width: 100%;
+    margin: 1% auto 0;
+    padding: 2px;
+    background: var(--bg-color(#e7e8ec ));
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-color);
+}
+
+
+/* PROFILE */
+#profile{
+    
+    text-align: start;
+    padding: 12px;
+}
+
+#profile img{
+    width: 250px;
+    align-content: center;
+}
+
+
+
+/* LINKS */
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: -140px 4000px 50px 550px;
+    padding: -200px 200px 75px 400px;
+}
+
+ul li a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 50px;
+
+    border-radius: 18px;
+  
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: all 0.2s;
+} 
+
+ul li a:hover{
+    background: rgb(102, 255, 153)
+}
+
+
+/* SOCIAL LINKS */
+#social-links{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#social-links a{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: 98px 48px 2px 24px;
+    padding: 24px;
+
+    transition: 0.3s;
+    border-radius: 100%;
+}
+
+#social-links a:hover{
+    background: rgb(102, 255, 153);
+}
+
+
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background: rgba(126, 123, 123, 0.555) var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    animation: slide-back .2s forwards;
+}
+
+
+
+footer{
+    margin-bottom: auto;
+    padding: 800px 500px 400px 600px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ANIMAÇÕES */
+@keyframes slide-in{
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+#pric{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#text{
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+    font-style: inherit;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+#text{
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+    font-style: inherit;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+h1{
+    margin-top: 25px;
+    text-align: center;
+    font-size: medium;
+}
+
+h2{
+    margin-top: 60px;
+    text-align: center;
+    font-size: medium;
+}
+
+h3{
+    margin-top: 60px;
+    text-align: center;
+    font-size: medium;
+}
+
+h4{
+    margin-top: 60px;
+    text-align: center;
+    font-size: medium;
+}
+
+h5{
+    margin-top: 60px;
+    text-align: center;
+    font-size: medium;
+}
+
+p{
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
